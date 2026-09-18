@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => {
   return {
     base: process.env.VITE_CDN_URL || '/',
     esbuild: isProduction ? {
-      drop: ['console', 'debugger'],
+      drop: ['debugger'],
     } : undefined,
     test: {
       environment: 'jsdom',

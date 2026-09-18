@@ -20,7 +20,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     esbuild: isProduction ? {
-      drop: ['console', 'debugger'],
+      drop: ['debugger'],
     } : undefined,
     plugins: [
       react(),
